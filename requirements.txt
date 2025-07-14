@@ -1,0 +1,7 @@
+python-a2a
+PyYAML
+feedparser
+requests
+jenkins 
+groq
+python-dotenv

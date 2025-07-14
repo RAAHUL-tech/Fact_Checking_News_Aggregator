@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+    <p>{{ site.description }}</p>
+    <hr>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <hr>
+    <p>Powered by <a href="https://jekyllrb.com">Jekyll</a> & Verified by Agents 🕵️</p>
+  </footer>
+</body>
+</html>

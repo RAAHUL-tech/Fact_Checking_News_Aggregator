@@ -1,0 +1,8 @@
+title: Fact-Checked News
+description: A curated collection of fact-verified news articles.
+baseurl: ""
+url: ""
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
