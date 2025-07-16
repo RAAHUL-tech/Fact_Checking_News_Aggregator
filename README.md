@@ -74,24 +74,29 @@ The system uses the **A2A (Agent-to-Agent) protocol** for inter-agent communicat
 
 ### Running the System
 
-1. **Start the MCP Server** (provides external tools)
-   ```bash
-   python mcp_server.py
-   ```
-   The MCP server runs on `http://localhost:8000` and provides tools for:
-   - Claim extraction from articles
-   - Fact verification against sources
-   - Jekyll post generation
-
-2. **Run the complete pipeline**
+1. **Run the complete pipeline**
    ```bash
    python run_all_agents.py
    ```
    This will:
-   - Start the orchestrator
+   - Start the mcp server
    - Initialize all agents
    - Execute the fact-checking pipeline
    - Generate Jekyll posts with verified claims
+
+
+2. **Start the Orchestrator** 
+   ```bash
+   python orchestrator.py
+   ```
+
+2. **Start the Orchestrator Client**
+   ```bash
+   python rorchestrator_client.py
+   ```
+   This will:
+   - Start the client interface
+   - Type 'start' to run the pieline and 'end' to stop the flow.
 
 3. **Serve the Jekyll website**
    ```bash
