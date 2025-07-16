@@ -1,17 +1,15 @@
 from python_a2a import A2AServer, Message, MessageRole, TextContent, run_server
-from python_a2a.mcp import FastMCPAgent
 from datetime import datetime
 import feedparser, hashlib, yaml, json
 import asyncio
 
-class CrawlerAgent(A2AServer, FastMCPAgent):
+class CrawlerAgent(A2AServer):
     """
     Agent that fetches and filters articles from RSS feeds.
     """
 
     def __init__(self):
         A2AServer.__init__(self)
-        FastMCPAgent.__init__(self)
         with open("agents/crawler_agent/config.yaml") as f:
             self.config = yaml.safe_load(f)
 

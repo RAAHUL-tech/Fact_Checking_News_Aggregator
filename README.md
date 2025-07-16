@@ -92,7 +92,7 @@ The system uses the **A2A (Agent-to-Agent) protocol** for inter-agent communicat
 
 2. **Start the Orchestrator Client**
    ```bash
-   python rorchestrator_client.py
+   python orchestrator_client.py
    ```
    This will:
    - Start the client interface

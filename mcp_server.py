@@ -60,7 +60,6 @@ def extract_claims(text: str) -> list:
         
         # Try to extract JSON array from the response
         # Look for JSON array pattern
-        import re
         json_match = re.search(r'\[.*\]', output, re.DOTALL)
         if json_match:
             json_str = json_match.group(0)
