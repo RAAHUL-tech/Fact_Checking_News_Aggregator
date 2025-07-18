@@ -81,14 +81,13 @@ The system uses the **A2A (Agent-to-Agent) protocol** for inter-agent communicat
    This will:
    - Start the mcp server
    - Initialize all agents
-   - Execute the fact-checking pipeline
-   - Generate Jekyll posts with verified claims
-
 
 2. **Start the Orchestrator** 
    ```bash
    python orchestrator.py
    ```
+   This will:
+   - Start the Orchestrator Agent.
 
 2. **Start the Orchestrator Client**
    ```bash
@@ -96,7 +95,7 @@ The system uses the **A2A (Agent-to-Agent) protocol** for inter-agent communicat
    ```
    This will:
    - Start the client interface
-   - Type 'start' to run the pieline and 'end' to stop the flow.
+   - Type 'start' to run the pipeline and 'end' to stop the flow.
 
 3. **Serve the Jekyll website**
    ```bash
